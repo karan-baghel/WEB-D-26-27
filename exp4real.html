@@ -4,12 +4,15 @@
         <title>
             Hotel Room Booking Form
         </title>
+        <style>
+            body{border: 3px solid black; padding: 10px;}
+        </style>
     </head>
     <body>
         <h1 align="center">
             Hotel Room Booking Form
         </h1>
-        <form align="center" action="#" border="">
+        <form align="center" action="#">
             <label for="fullname"> Full Name: </label>
             <input type="text" id="fullname" name="fullname">
             <br><br>
@@ -20,17 +23,28 @@
             <input type="tel" id="email" name="email">
             <br><br>
             <label for="checkin"> Check-in Date: </label>
-            <input type="date">
+            <input type="date" id="checkin" name="checkin">
             <br><br>
             <label for="checkout"> Check-out Date: </label>
-            <input type="date">
+            <input type="date" id="checkout" name="checkout">
             <br><br>
             <label for="roomtype"> Room Type: </label>
             <select name="room">
                 <option value="single"> Single Room </option>
                 <option value="double"> Double Room </option>
-                <option va
+                <option value="deluxe"> Deluxe Room </option>
+                <option value="suite"> Suite </option>
             </select>
+            <br><br>
+            <label for="specialreq"> Special Requests: </label><br>
+            <textarea rows="4" cols="30" id="specialreq" name="specialreq" ></textarea>
+            <br><br>
+            <button>
+                <input type="submit">
+            </button>
+            <button>
+                <input type="reset">
+            </button>
         </form>
     </body>
 </html>
